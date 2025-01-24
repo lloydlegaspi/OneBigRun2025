@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using OneBigRun2025.Models;
+
 namespace OneBigRun2025
 {
     public class Program
@@ -9,6 +12,10 @@ namespace OneBigRun2025
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
+            // Register AppDbContext with the DI container
+            builder.Services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -16,10 +23,9 @@ namespace OneBigRun2025
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
-
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(

@@ -66,7 +66,7 @@
                     <input type="email" id="Email" name="Email" value="@Model.Email" required
                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                     @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-red-500 text-sm" })
-                    
+
                 </div>
 
                 <!-- Shirt Size and Category (flex layout for two columns) -->
@@ -99,11 +99,15 @@
                     </div>
                 </div>
 
-                <!-- Submit Button -->
-                <div class="text-center">
-                    <button type="submit"
-                            class="w-full bg-blue-900 text-white py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">
-                        Submit Registration
+                <!-- Buttons for submission -->
+                <div class="flex justify-center mt-6 gap-5">
+                    <button type="submit" formaction="/Registration/RegisterWithAdo"
+                            class="bg-blue-600 text-white px-4 py-2 rounded shadow hover:bg-blue-700 transition duration-300">
+                        Submit with ADO.NET
+                    </button>
+                    <button type="submit" formaction="/Registration/RegisterWithOrm"
+                            class="bg-green-600 text-white px-4 py-2 rounded shadow hover:bg-green-700 transition duration-300">
+                        Submit with ORM
                     </button>
                 </div>
             </form>
@@ -121,6 +125,6 @@
 </body>
 </html>
 
-
+           
 
 
