@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "One Big Run 2025 - Contacts";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - One Big Run 2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen flex flex-col items-center justify-center">
+
+    <!-- Header -->
+    <header class="relative w-full h-64 mb-8">
+        <!-- Blurred Background -->
+        <div class="absolute inset-0">
+            <img src="~/images/header.png" alt="Blurred Background" class="w-full h-full object-cover filter blur-md scale-105">
+        </div>
+
+        <!-- Foreground Image -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <img src="~/images/header.png" alt="One Big Run 2025 Banner" class="w-auto h-48 object-contain drop-shadow-lg">
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container mx-auto px-6 py-12">
+
+        <!-- Title -->
+        <h2 class="text-4xl font-semibold text-center text-blue-900 mb-6">Contact Us</h2>
+
+        <!-- Message -->
+        <p class="text-lg text-center text-gray-600 mb-8">If you have any questions or need more information, feel free to contact us:</p>
+
+        <!-- Contact Details -->
+        <div class="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+            <ul class="space-y-4 text-lg text-gray-700">
+                <li><strong class="text-blue-600">SMS/Viber:</strong> <span class="text-gray-600">0915 202 3092</span></li>
+            </ul>
+        </div>
+
+        <!-- Additional Info -->
+        <p class="text-center text-gray-500 text-sm mt-6">We look forward to hearing from you!</p>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 mt-8 w-full">
+        <div class="container mx-auto px-6 text-center">
+            <p>Thank you for supporting the One Big Run 2025 event. Let's run for a cause!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

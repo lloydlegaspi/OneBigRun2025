@@ -1,0 +1,46 @@
+﻿@model OneBigRun2025.Models.UserModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Registering!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen">
+
+    <!-- Main Container -->
+    <div class="bg-white p-8 rounded-3xl shadow-xl w-full max-w-xl mx-auto">
+
+        <!-- Title -->
+        <h2 class="text-3xl font-semibold text-center text-blue-900 mb-6">Thank You for Registering for One Big Run 2025!</h2>
+
+        <!-- Confirmation Message -->
+        <p class="text-lg text-gray-600 text-center mb-6">Your registration details are as follows:</p>
+
+        <!-- Registration Details -->
+        <div class="bg-blue-50 p-6 rounded-lg shadow-md max-w-xl mx-auto">
+            <ul class="space-y-4">
+                <li class="text-gray-700 text-lg"><strong>Name:</strong> <span class="text-blue-600">@Model.Name</span></li>
+                <li class="text-gray-700 text-lg"><strong>Age:</strong> <span class="text-blue-600">@Model.Age</span></li>
+                <li class="text-gray-700 text-lg"><strong>Shirt Size:</strong> <span class="text-blue-600">@Model.ShirtSize</span></li>
+                <li class="text-gray-700 text-lg"><strong>Email:</strong> <span class="text-blue-600">@Model.Email</span></li>
+                <li class="text-gray-700 text-lg"><strong>Phone Number:</strong> <span class="text-blue-600">@Model.PhoneNumber</span></li>
+                <li class="text-gray-700 text-lg"><strong>Category:</strong> <span class="text-blue-600">@Model.Category</span></li>
+                <li class="text-gray-700 text-lg"><strong>Registration Date:</strong> <span class="text-blue-600">@Model.RegistrationDate.ToString("MMMM dd, yyyy")</span></li>
+            </ul>
+        </div>
+
+        <!-- Event Reminder -->
+        <p class="text-lg text-gray-600 text-center mt-6">We look forward to seeing you on <span class="font-bold text-blue-600">May 18, 2025!</span></p>
+
+        <!-- Call to Action -->
+        <div class="mt-8 text-center">
+            <a href="/" class="bg-blue-900 text-white py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 transition duration-300">Go Back to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

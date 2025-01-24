@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "One Big Run 2025 - Home";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide flex flex-col">
+
+    <!-- Header  -->
+    <header class="relative h-64">
+        <!-- Blurred Background -->
+        <div class="absolute inset-0">
+            <img src="~/images/header.png" alt="Blurred Background" class="w-full h-full object-cover filter blur-md scale-105">
+        </div>
+
+        <!-- Foreground Image -->
+        <div class="absolute inset-0 flex items-center justify-center">
+            <img src="~/images/header.png" alt="One Big Run 2025 Banner" class="w-auto h-48 object-contain drop-shadow-lg">
+        </div>
+    </header>
+
+    <!-- About, Event Details, and Registration Fees Combined Section -->
+    <section class="py-12 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-8">
+
+                <!-- Left Side: About & Event Details (Stacked) -->
+                <div class="w-full lg:w-2/5 bg-white rounded-3xl shadow-lg p-8 flex flex-col gap-6">
+
+                    <!-- About Section -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">About One Big Run 2025</h2>
+                        <p class="text-gray-600 mb-4">
+                            One Big Run combines fitness and purpose. All proceeds support charitable programs and medical missions in Pampanga.
+                        </p>
+                        <p class="text-gray-600 mb-4">
+                            Hosted by the Ateneo Alumni Association (Pampanga Chapter) and organized by Smoke 10 Events Management, this marathon features categories ranging from 3K to 42K with exclusive race kits.
+                        </p>
+                        <p class="text-gray-600">
+                            Lace up and run for a cause!
+                        </p>
+                    </div>
+
+                    <!-- Event Details Section -->
+                    <div class="bg-blue-50 rounded-2xl p-6 shadow-md">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4">Event Details</h3>
+                        <p class="text-gray-700 mb-2"><strong>Date:</strong> May 18, 2025</p>
+                        <p class="text-gray-700 mb-2"><strong>Venue:</strong> Clark Parade Grounds, Pampanga</p>
+                        <p class="text-gray-700 mb-2"><strong>Categories:</strong> 3K | 5K | 10K | 21K | 42K</p>
+                        <p class="text-gray-700"><strong>Organizer:</strong> SMOKE10 Events</p>
+                    </div>
+                </div>
+
+                <!-- Right Side: Registration Fees -->
+                <div class="w-full lg:w-3/5 bg-white rounded-3xl shadow-lg p-8">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center">Registration Fees</h3>
+                    <div class="overflow-x-auto">
+                        <table class="table-auto w-full border border-gray-300 shadow-md">
+                            <thead>
+                                <tr class="bg-blue-900 text-white">
+                                    <th class="px-4 py-3">Category</th>
+                                    <th class="px-4 py-3">Registration Fee</th>
+                                    <th class="px-4 py-3">Inclusions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-gray-50">
+                                    <td class="px-4 py-3">42K</td>
+                                    <td class="px-4 py-3">₱1,999</td>
+                                    <td class="px-4 py-3">Racebib with RFID, singlet, finisher shirt, medal, and drawstring bag</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3">21K</td>
+                                    <td class="px-4 py-3">₱1,799</td>
+                                    <td class="px-4 py-3">Racebib with RFID, singlet, finisher shirt, medal, and drawstring bag</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-4 py-3">10K</td>
+                                    <td class="px-4 py-3">₱1,299</td>
+                                    <td class="px-4 py-3">Racebib with RFID, singlet, medal, and drawstring bag</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3">5K</td>
+                                    <td class="px-4 py-3">₱699</td>
+                                    <td class="px-4 py-3">Racebib with RFID, singlet, and medal</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-4 py-3">3K</td>
+                                    <td class="px-4 py-3">₱599</td>
+                                    <td class="px-4 py-3">Racebib with RFID, singlet, and medal</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Register Button -->
+                    <div class="text-center mt-6">
+                        <a href="/Registration/Index" class="inline-block bg-blue-900 text-white py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition">
+                            Register Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>Thank you for supporting the One Big Run 2025 event. Let's run for a cause!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
