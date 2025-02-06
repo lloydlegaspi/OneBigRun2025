@@ -41,13 +41,13 @@ This web application is an assignment for the COMP 019: Applications Development
 ## Screenshots
 
 - **Home Page**
-  ![Home Page](Home-Page.png)
+  ![Home Page](public/img/Home-Page.png)
 
 - **Registration Form**
-  ![Registration Form](Registration-Page.png)
+  ![Registration Form](public/img/Registration-Page.png)
 
 - **Confirmation Page**
-  ![Confirmation Page](Confirmation-Page.png)
+  ![Confirmation Page](public/img/Confirmation-Page.png)
 
 ## Database Integration
 
